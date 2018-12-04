@@ -1,0 +1,184 @@
+page{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    overflow-y: auto;    
+}
+
+.title {
+    line-height: 60rpx;
+    padding: 0 20rpx;
+    color: #999;
+    font-size: 28rpx;
+}
+
+.list,.product-list {
+    padding: 40rpx 30rpx;
+    background: #fff;
+    border-bottom: 1rpx solid #f4f4f4;
+    position: relative;
+}
+.product-list text {
+    display: inline-block;
+    width: 80%;
+    line-height: 60rpx;
+    color: #222;
+    font-size: 32rpx;
+}
+
+.list text {
+    display: inline-block;
+    width: 50%;
+    line-height: 60rpx;
+    color: #222;
+    font-size: 32rpx;
+}
+
+.list button{
+    width: 100rpx;
+    line-height: 140rpx;
+    color: #ccc;
+    border-left: 1rpx solid #eee;
+    border-radius: 0;
+    font-size: 50rpx;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    font-weight: normal;
+}
+
+.add {
+    line-height: 140rpx;
+    color: #222;
+    font-size: 32rpx;
+    position: relative;
+    background: #fff;
+    text-align: center;
+    border-bottom: 1rpx solid #f4f4f4;
+}
+
+.add::after {
+    content: "";
+    position: absolute;
+    width: 20rpx;
+    height: 20rpx;
+    border-top: 4rpx solid #ccc;
+    border-right: 4rpx solid #ccc;
+    right: 40rpx;
+    top: 60rpx;
+    transform: rotate(45deg);
+}
+
+
+.mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f4f4f4;
+}
+
+.mask text{
+    text-align: center;
+    display: block;
+    font-size: 32rpx;
+    color: red;
+    margin: 400rpx auto;
+}
+
+.mask button{
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-size: 30rpx;
+    margin-top: 50rpx;
+    background: #19ad19;
+}
+
+.ok {
+    width: 70%;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-size: 30rpx;
+    margin-top: 50rpx;
+}
+
+.more{
+  position: absolute;
+    line-height: 20rpx;
+    right: 24rpx;
+    top: 40rpx;
+    padding: 0 10rpx;
+    color: #333;
+    font-size: 50rpx;
+}
+.porpur{
+    position: absolute;
+    width: 340rpx;
+    right: 20rpx;
+    top: 90rpx;
+    z-index: 999;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10rpx;
+}
+ .porpur::after{
+    content: "";
+    border-top: 10rpx solid rgba(0,0,0,0.6);
+    border-right: 10rpx solid rgba(0,0,0,0.6);
+    border-bottom: 10rpx solid transparent;
+    border-left: 10rpx solid transparent;
+    transform: rotate(-45deg);
+    position: absolute;    
+    top: -10rpx;
+    right: 24rpx;
+}
+.porpur view{
+    overflow: hidden;
+    color: #fff;    
+}
+
+.porpur view text{
+    border-bottom: 1rpx solid #999;
+    line-height: 86rpx;
+    display: block;
+    float: left;
+    width: 234rpx;
+    font-size: 32rpx;    
+}
+
+.porpur view:last-child text{
+    border: 0;
+}
+.porpur view image{
+    float: left;
+    width: 46rpx;
+    height: 46rpx;
+    margin: 20rpx 30rpx;
+}
+.i-swipeout-demo-item{
+    padding: 0;
+    background: #fff;
+    border-bottom: 1rpx solid #f4f4f4;
+    height: 120rpx;
+}
+.i-swipeout-demo-button{
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  height: 120rpx;
+  line-height: 120rpx;
+}
+.detail {
+  background-color: #108ee9;
+  color: #fff;
+}
+.product-name{
+  /* padding-left: 200rpx; */
+}

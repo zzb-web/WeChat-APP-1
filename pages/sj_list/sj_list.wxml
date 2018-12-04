@@ -1,0 +1,5 @@
+<block wx:for='{{Data}}' wx:key>
+    <view data-paperID='{{item.paperID}}' data-name='{{item.name}}' bindtap='sj'>
+        <text>{{item.name}}</text>
+    </view>
+</block>

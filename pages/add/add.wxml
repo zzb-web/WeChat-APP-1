@@ -1,0 +1,13 @@
+<view class='title'>错题来源</view>
+<radio-group>
+    <block wx:for='{{Data}}' wx:key>
+        <view class='radio'>
+            <radio data-bookid='{{item.bookID}}' data-name='{{item.name}}' bindtap='group'> {{item.name}}</radio>
+        </view>
+    </block>
+</radio-group>
+<view class='title'>起始页码</view>
+<input type='number' bindinput='star' placeholder='请输入起始页码'></input>
+<view class='title'>结束页码</view>
+<input type='number' bindinput='end' placeholder='请输入结束页码'></input>
+<button type='primary' bindtap='ok'>确定</button>

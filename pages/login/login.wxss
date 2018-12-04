@@ -1,0 +1,21 @@
+page {
+    padding-top: 300rpx;
+}
+
+input {
+    border: 1rpx solid #19ad19;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 8rpx;
+    height: 60rpx;
+    padding: 0 20rpx;
+    margin-bottom: 50rpx;
+}
+
+button {
+    width: 70%;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-size: 30rpx;
+    margin-top: 50rpx;
+}

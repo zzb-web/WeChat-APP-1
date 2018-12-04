@@ -1,0 +1,70 @@
+page {
+    padding-bottom: 200rpx;
+}
+
+.time {
+    padding: 20rpx;
+}
+
+.time text {
+    font-size: 28rpx;
+    color: #333;
+    line-height: 80rpx;
+}
+
+.con {
+    padding: 0 60rpx;
+}
+
+.con .title {
+    overflow: hidden;
+}
+
+.con .title text {
+    float: left;
+    display: block;
+    width: 50%;
+    font-size: 30rpx;
+    color: #333;
+    line-height: 80rpx;
+    text-align: center;
+}
+
+.con .title text:last-child {
+    float: right;
+}
+
+.con .info .item {
+    overflow: hidden;
+}
+
+.con .info .item view {
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 100rpx;
+}
+
+.con .info .item switch {
+    float: right;
+    width: 50%;
+    line-height: 100rpx;
+    text-align: center;
+}
+
+.wx-switch-input {
+    background: #cccccc !important;
+    border: 1px solid #cccccc !important;
+}
+
+.wx-switch-input::before {
+    background: #f21515 !important;
+}
+
+button {
+    width: 70%;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-size: 30rpx;
+    margin-top: 50rpx;
+}

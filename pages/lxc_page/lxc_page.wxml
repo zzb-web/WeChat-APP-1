@@ -1,0 +1,3 @@
+<view>页码</view>
+<input placeholder='请输入书的页码' type='number' bindinput='val'></input>
+<text bindtap='seach'></text>

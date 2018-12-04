@@ -1,0 +1,95 @@
+<!--pages/product_detail/index.wxml-->
+<view>
+  <view class='list-item'>
+    <text>服务状态</text>
+    <text>{{serviceStatus}}</text>
+  </view>
+
+  <view class='list-item'>
+    <text>问题</text>
+    <text>错题学习</text>
+  </view>
+
+  <view class='list-item'>
+    <text>层次</text>
+    <text>{{gradationStatus}}</text>
+  </view>
+
+  <view class='list-item'>
+    <text>深度</text>
+    <text>{{depthStatus}}</text>
+  </view>
+
+  <view class='list-item list-item-2'>
+    <view>总体</view>
+    <view>
+      <view><text>名称 : {{name}}</text></view>
+      <view><text>级别 : {{level}}</text></view>
+      <view><text>对象 : {{object}}</text></view>
+    </view>
+  </view>
+
+  <view class='list-item list-item-1' wx:if="{{epuStatus === 'EPU3'}}">
+    <view>处理器</view>
+    <view>
+      <view><text>EPU : {{epuStatus}}</text></view>
+      <view><text>题量控制 : {{sameTypeMax}}</text></view>
+      <view><text>错题状态 ：{{_wrongProblemStatus}}</text></view>
+      <view><text>题目种类 : {{problemType}}</text></view>
+      <view><text>同类题量 : {{sameTypeMax}}</text></view>
+      <view><text>同类来源 ：{{sameTypeSource}}</text></view>
+    </view>
+  </view>
+
+   <view class='list-item list-item-2' wx:if="{{epuStatus !== 'EPU3'}}">
+    <view>处理器</view>
+    <view>
+      <view><text>EPU : {{epuStatus}}</text></view>
+      <view><text>题量控制 : {{sameTypeMax}}</text></view>
+      <view><text>纸张大小 : {{pageType}}</text></view>
+    </view>
+  </view>
+
+  <view class='list-item'>
+    <text>错题源</text>
+    <text>{{problemSource}}</text>
+  </view>
+
+   <view class='list-item list-item-2' wx:if="{{epuStatus === 'EPU3'}}">
+    <view>文档形式</view>
+    <view>
+      <view><text>纸张大小 : {{pageType}}</text></view>
+      <view><text>分数栏 : {{columnCount}}</text></view>
+      <view><text>边界控制 : {{borderControl}}</text></view>
+    </view>
+  </view>
+
+   <view class='list-item list-item-2'>
+    <view>服务</view>
+    <view>
+      <view><text>服务类型 : {{serviceType}}</text></view>
+      <view><text>服务发起 : {{serviceLauncher}}</text></view>
+      <view><text>服务时段 : {{_serviceStartTime}}~{{_serviceEndTime}}</text></view>
+    </view>
+  </view>
+
+  <view class='list-item' wx:if="{{epuStatus === 'EPU3'}}">
+    <text>异常处理</text>
+    <text>{{_exceptionHandler}}</text>
+  </view>
+
+  <view class='list-item'>
+    <text>价格</text>
+    <text>{{price}}</text>
+  </view>
+  
+  <view class='list-item'>
+    <text>其他信息</text>
+   <text>
+      <text>学科 : {{subject}} | </text>
+      <text>年级 : {{grade}}</text>
+    </text>
+  </view>
+
+ <i-button bind:click="selectProfuct" type="primary">选择此产品</i-button>
+</view>

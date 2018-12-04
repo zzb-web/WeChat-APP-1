@@ -1,0 +1,56 @@
+{
+  "component": true,
+    "pages": [
+        "pages/login/login",
+        "pages/tab1/tab1",
+        "pages/tab2/tab2",
+        "pages/tab3/tab3",
+        "pages/tab4/tab4",
+        "pages/jcb_list/jcb_list",
+        "pages/jcb/jcb",
+        "pages/sj_list/sj_list",
+        "pages/sj/sj",
+        "pages/lxc_page/lxc_page",
+        "pages/lxc/lxc",
+        "pages/add/add",
+        "pages/pdf/pdf",
+        "pages/product_detail/index",
+        "pages/wrongproblem_source/index",
+        "pages/topic_basis/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#343338",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "#fff"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/tab1/tab1",
+                "iconPath": "/images/tab1.png",
+                "selectedIconPath": "/images/tab11.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/tab2/tab2",
+                "iconPath": "images/tab2.png",
+                "selectedIconPath": "images/tab22.png",
+                "text": "错题标记"
+            },
+            {
+                "pagePath": "pages/tab3/tab3",
+                "iconPath": "/images/tab3.png",
+                "selectedIconPath": "/images/tab33.png",
+                "text": "生成纠错本"
+            },
+            {
+                "pagePath": "pages/tab4/tab4",
+                "iconPath": "/images/tab4.png",
+                "selectedIconPath": "/images/tab44.png",
+                "text": "我的"
+            }
+        ],
+        "color": "#8a8a8a",
+        "selectedColor": "#19ad19"
+    }
+}

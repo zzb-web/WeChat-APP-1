@@ -1,0 +1,58 @@
+/* pages/product_detail/index.wxss */
+.list-item{
+  padding: 30rpx 30rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #999;
+}
+.list-item-1{
+  height: 330rpx;
+}
+.list-item-2{
+  height: 150rpx;
+}
+.list-item-3{
+  height: 100rpx;
+}
+.list-item > text{
+  display: inline-block;
+}
+.list-item > text:first-child{
+  width: 20%;
+}
+.list-item > text:last-child{
+    float: right;
+    width: 70%;
+    text-align: left;
+}
+.list-item-1 > view:first-child{
+  width: 20%;
+  float: left;
+   height: 330rpx;
+    line-height: 330rpx;
+}
+.list-item-2 > view:first-child{
+  width: 20%;
+  float: left;
+   height: 150rpx;
+    line-height: 150rpx;
+}
+.list-item-3 > view:first-child{
+  width: 20%;
+  float: left;
+   height: 100rpx;
+    line-height: 100rpx;
+}
+.list-item-1 > view:last-child,.list-item-2 > view:last-child,.list-item-3 > view:last-child{
+   width: 70%;
+   float: right;
+   text-align: left;
+}
+.list-item-1 > view:last-child >view ,.list-item-2 > view:last-child >view,.list-item-3 > view:last-child >view {
+  padding: 10rpx 0;
+}
+.list-item-1 > view:last-child >view:first-child,.list-item-2 > view:last-child >view:first-child,.list-item-3 > view:last-child >view:first-child{
+  padding: 0;
+}
+.list-item-1 > view:last-child >view:last-child,.list-item-2 > view:last-child >view:last-child,.list-item-3 > view:last-child >view:last-child{
+  padding: 0;
+}

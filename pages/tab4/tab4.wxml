@@ -1,0 +1,18 @@
+<view class='header'>
+    <image src='../../images/head.png'></image>
+    <view>{{name}}</view>
+    <text>学习号：{{learnId}}</text>
+</view> 
+<view class='list'>
+    <image src='../../images/nav(2).png'></image>
+    <view>订单管理</view>
+</view> 
+<view class='list'>
+    <image src='../../images/nav(3).png'></image>
+    <view>服务中心</view>
+</view> 
+<view class='list'>
+    <image src='../../images/nav(1).png'></image>
+    <view>设置</view>
+</view> 
+<button bindtap='remove'>退出登录</button>

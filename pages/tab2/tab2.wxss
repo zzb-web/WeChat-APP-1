@@ -1,0 +1,33 @@
+view{
+    overflow: hidden;
+    padding: 40rpx 30rpx;
+    background: #fff;
+    border-bottom: 1rpx solid #f4f4f4;
+    position: relative;
+}
+
+view::after{
+    content: "";
+    position: absolute;
+    width: 20rpx;
+    height: 20rpx;
+    border-top: 2rpx solid #ccc;
+    border-right: 2rpx solid #ccc;
+    right: 40rpx;
+    top: 60rpx;
+    transform: rotate(45deg);
+}
+
+image{
+    width: 60rpx;
+    height: 60rpx;
+    float: left;
+}
+
+text{
+    line-height: 60rpx;
+    padding-left: 20rpx;
+    color: #222;
+    font-size: 32rpx;
+}
+

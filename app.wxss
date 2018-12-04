@@ -1,0 +1,14 @@
+@import 'weui.wxss';
+
+page{
+    background: #f4f4f4;
+}
+
+page, veiw, text, input {
+    box-sizing: border-box;
+    font-size: 28rpx;
+}
+
+button::after {
+    border: 0;
+}

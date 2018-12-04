@@ -1,0 +1,16 @@
+<!--pages/topic_basis/index.wxml-->
+<view>
+  <view class='content head'>
+    <view class='topic_index topic_item topic-head'>题目序号</view> 
+    <view class='topic_source topic_item topic-head'>题目来源</view> 
+    <view class='topic_reason topic_item topic-head'>选题依据</view> 
+  </view>
+  <block wx:for='{{topicData}}' wx:key>
+   <view class='content'>
+    <text class='topic_index topic_item'>{{item.topicIndex}}</text> 
+    <text class='topic_source topic_item'>{{item.topicSource}}</text> 
+    <text class='topic_reason topic_item'>{{item.topicReason}}</text> 
+  </view>
+  </block>
+   <i-button bind:click="ok" type="primary">生成文档</i-button>
+</view>

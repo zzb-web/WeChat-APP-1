@@ -1,0 +1,16 @@
+<view class='time'>纠错本日期：{{time}}</view>
+<view class='con'>
+    <view class='title'>
+        <text>题目位置</text>
+        <text>做题结果</text>
+    </view>
+    <view class='info'>
+        <block wx:for='{{arr1}}' wx:key='index'>
+            <view class='item'>
+                <view><text>{{item.index}}</text><text hidden='{{item.subIdx<0?true:false}}'>/({{item.subIdx}})</text></view>
+                <switch checked='true' color='#00bd7a' data-index='{{index}}' bindchange='aa'></switch>
+            </view>
+        </block>
+    </view>
+</view>
+<button type='primary' disabled='{{disabled}}' bindtap='ok'>保存</button>

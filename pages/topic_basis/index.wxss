@@ -1,0 +1,31 @@
+/* pages/topic_basis/index.wxss */
+.content{
+  width: 100%;
+  background-color: #fff;
+}
+.topic_item{
+  display: inline-block;
+  text-align: left;
+  font-size: 24rpx;
+  border-bottom: 1rpx solid #f4f4f4;
+  padding: 25rpx 10rpx;
+  word-break:break-all;
+}
+.topic-head{
+  font-weight: 600;
+  font-size: 28rpx;
+  padding: 25rpx 0;
+  text-align: center;
+}
+.topic_index{
+  width: 19%;
+  text-align: center;
+   /* border-right: 1rpx solid #f4f4f4; */
+}
+.topic_source{
+  width: 40%;
+   /* border-right: 1rpx solid #f4f4f4; */
+}
+.topic_reason{
+  width: 40%;
+}

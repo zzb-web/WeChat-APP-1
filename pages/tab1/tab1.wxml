@@ -1,0 +1,37 @@
+<view class='title' hidden='{{n1}}'>文档下载</view>
+<view class='list' hidden='{{n1}}'>
+    <view class='left'>
+        <image src='../../images/tab1_nav1.png'></image>
+        <text class='name' decode="true">纠错本&nbsp;&nbsp;&nbsp;&nbsp;题目</text>
+        <text class='time'>{{date}}</text>
+    </view>
+    <view class='btn' bindtap='btn1'>...</view>
+    <view class='porpur' hidden='{{showhide1}}'>
+        <view data-pdf='{{Data.problemFileURL}}' bindtap='downloadFile'>
+            <image src='../../images/look.png'></image>
+            <text>预览文档</text>
+        </view>
+        <view data-pdf='{{Data.problemFileURL}}' bindtap='Clip'>
+            <image src='../../images/fz.png'></image>
+            <text>复制链接</text>
+        </view>
+    </view>
+</view>
+<view class='list' hidden='{{n1}}'>
+    <view class='left'>
+        <image src='../../images/tab1_nav2.png'></image>
+        <text class='name' decode="true">纠错本&nbsp;&nbsp;&nbsp;&nbsp;答案</text>
+        <text class='time'>{{date}}</text>
+    </view>
+    <view class='btn' bindtap='btn2'>...</view>
+    <view hidden='{{showhide2}}' class='porpur'>
+        <view data-pdf='{{Data.answerFileURL}}' bindtap='downloadFile'>
+            <image src='../../images/look.png'></image>
+            <text>预览文档</text>
+        </view>
+        <view data-pdf='{{Data.answerFileURL}}' bindtap='Clip'>
+            <image src='../../images/fz.png'></image>
+            <text>复制链接</text>
+        </view>
+    </view>
+</view>

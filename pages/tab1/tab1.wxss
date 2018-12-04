@@ -1,0 +1,92 @@
+.title{
+    line-height: 60rpx;
+    padding: 0 20rpx;
+    color: #999;
+    font-size: 28rpx;
+}
+
+.list{
+    height: 100rpx;
+    padding: 14rpx 30rpx;
+    background: #fff;
+    border-bottom: 1rpx solid #f4f4f4;
+    position: relative;
+}
+
+.list .left image{
+    width: 60rpx;
+    height: 60rpx;
+    float: left;
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+}
+
+.list .left .name{
+    color: #222;
+    font-size: 32rpx;
+    line-height: 50rpx;
+}
+
+.list .left .time{
+    display: block;
+    color: #ccc;
+    font-size: 26rpx;
+    line-height: 50rpx;
+}
+
+.list .btn{
+    position: absolute;
+    line-height: 20rpx;
+    right: 24rpx;
+    top: 40rpx;
+    padding: 0 10rpx;
+    color: #333;
+    font-size: 50rpx;
+}
+
+.list .porpur{
+    position: absolute;
+    width: 340rpx;
+    right: 20rpx;
+    top: 90rpx;
+    z-index: 999;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10rpx;
+}
+
+.list .porpur::after{
+    content: "";
+    border-top: 10rpx solid rgba(0,0,0,0.6);
+    border-right: 10rpx solid rgba(0,0,0,0.6);
+    border-bottom: 10rpx solid transparent;
+    border-left: 10rpx solid transparent;
+    transform: rotate(-45deg);
+    position: absolute;    
+    top: -10rpx;
+    right: 24rpx;
+}
+
+.list .porpur view{
+    overflow: hidden;
+    color: #fff;    
+}
+
+.list .porpur view text{
+    border-bottom: 1rpx solid #999;
+    line-height: 86rpx;
+    display: block;
+    float: left;
+    width: 234rpx;
+    font-size: 32rpx;    
+}
+
+.list .porpur view:last-child text{
+    border: 0;
+}
+
+.list .porpur view image{
+    float: left;
+    width: 46rpx;
+    height: 46rpx;
+    margin: 20rpx 30rpx;
+}

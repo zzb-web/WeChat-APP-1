@@ -1,0 +1,15 @@
+
+<view class='title'>错题来源</view>
+<block wx:for='{{Data}}' wx:key>
+    <view data-index='{{index}}' class='list'>
+        <text>{{item.name}}</text>
+        <text>P{{item.star}}~{{item.end}}</text>
+        <button data-index='{{index}}' bindtap='del'>×</button>
+    </view>
+</block>
+<view class='add' bindtap='add'>＋添加错题</view>
+<button class='ok' type='primary' disabled='{{disabled}}' bindtap='ok'>生成纠错本</button>
+<view hidden='{{showhide}}' class='mask'>
+    <text>纠错本未标记</text>
+    <button bindtap='jcb_list'>去标记</button>
+</view>

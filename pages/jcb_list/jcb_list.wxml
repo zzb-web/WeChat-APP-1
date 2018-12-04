@@ -1,0 +1,5 @@
+<block wx:for='{{Data}}' wx:key>
+    <view data-unix='{{item.unix}}' data-type='{{item.type}}' bindtap='jcb'>
+        <text>{{item.time}}</text>
+    </view>
+</block>

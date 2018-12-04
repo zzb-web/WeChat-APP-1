@@ -1,0 +1,47 @@
+page{
+    background: #f4f4f4;
+    padding-top: 30rpx;
+}
+
+view{
+    padding: 0 30rpx;
+    font-size: 26rpx;
+    color: #999;
+    line-height: 50rpx;
+}
+
+input {
+    background: #fff;
+    height: 160rpx;
+    padding: 0 20rpx;
+    float: left;
+    width: 80%;
+}
+
+text {
+    color: #999;
+    width: 20%;
+    float: right;
+    line-height: 160rpx;
+    height: 160rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+    font-family: 'simsun';
+    background: #fff;
+    border-left: 1rpx solid #eee;
+    border-radius: 0;
+    position: relative;
+}
+
+text::after{
+    content: "";
+    position: absolute;
+    width: 20rpx;
+    height: 20rpx;
+    border-top: 2rpx solid #ccc;
+    border-right: 2rpx solid #ccc;
+    right: 60rpx;
+    font-weight: bold;
+    top: 70rpx;
+    transform: rotate(45deg);
+}

@@ -1,0 +1,14 @@
+<view hidden='{{n1}}' bindtap='jcb_list'>
+    <image src='../../images/tab2_nav1.png'></image>
+    <text>纠错本</text>
+</view>
+<view hidden='{{n2}}' bindtap='sj_list'>
+    <image src='../../images/tab2_nav2.png'></image>
+    <text>试卷</text>
+</view>
+<block wx:for='{{arr}}' wx:key>
+    <view hidden='{{n3}}' data-bookID='{{item.bookID}}' data-name='{{item.name}}' data-type='{{item.type}}' bindtap='lxc_page'>
+        <image src='../../images/tab2_nav3.png'></image>
+        <text>{{item.name}}</text>
+    </view>
+</block>

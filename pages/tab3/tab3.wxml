@@ -1,0 +1,35 @@
+<view class='error'>
+<view class='title'>产品列表(向左滑动操作)</view>
+<block wx:for='{{productData}}' wx:key>
+    <!-- <view data-index='{{index}}' class='product-list'>
+        <text>{{item.name}}</text>
+         <view class='more' bindtap='showMore' data-index='{{index}}'>...</view>
+        <view class='porpur' wx:if="{{showIndex === index && showMore}}">
+            <view bindtap='detailHandle' data-index='{{index}}'>
+                <image src='../../images/look.png'></image>
+                <text>产品详情</text>
+            </view>
+            <view bindtap="openConfirm">
+                <image src='../../images/fz.png'></image>
+                <text>xxxx</text>
+            </view>
+        </view>
+    </view> -->
+     <i-swipeout  data-index='{{index}}' 
+                  i-class="i-swipeout-demo-item" 
+                  operateWidth="{{100}}">
+        <view slot="content" class='product-name'>
+          {{item.name}}
+        </view>
+        <view slot="button">
+            <view class="i-swipeout-demo-button detail" 
+                  bindtap='detailHandle'
+                  data-index='{{index}}'>详情</view>
+            <view class="i-swipeout-demo-button"
+                  data-index='{{index}}'
+                  bindtap='selectHandle'>选择</view>
+        </view>
+    </i-swipeout>
+</block>
+  <view class='detail-content'></view>
+</view>
